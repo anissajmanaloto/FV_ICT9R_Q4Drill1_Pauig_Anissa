@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4 Drill 1</title>
+    
+</head>
+<body>
+    
+    <h1>JavaScript Conditional Statements</h1>
+    <h4>i love bts</h4>
+
+    <input type="text" class="form-control" id="Age" placeholder="age age age">
+
+    <button class="btn btn-info" onclick="checkAge()">✔</button>
+
+    <script>
+        function checkAge(){
+        var Age = document.getElementById("Age").value;
+
+        if (isNaN(Age) || Age < 0){
+            alert("Input valid number.");
+        }
+        else if (Age < 18){
+            alert("You are a youngstah.");
+        }
+
+        else if(Age > 18){
+            alert("You are unc.");
+        }
+
+        else{
+            alert("You are not a youngstah.");
+        }
+    }
+    </script>
+    
+</body>
+</html>
