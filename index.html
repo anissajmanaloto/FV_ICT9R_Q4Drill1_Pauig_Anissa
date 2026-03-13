@@ -8,25 +8,24 @@
 </head>
 <body>
     
-    <h1>JavaScript Conditional Statements</h1>
-    <h4>i love bts</h4>
+    <h1>Electricity Consumption Classifier</h1>
 
-    <input type="text" class="form-control" id="Age" placeholder="age age age">
+    <input type="text" class="form-control" id="Electr1city" placeholder="...">
 
-    <button class="btn btn-info" onclick="checkAge()">✔</button>
+    <button class="btn btn-info" onclick="Check()">✔</button>
 
     <script>
-        function checkAge(){
-        var Age = document.getElementById("Age").value;
+        function Check(){
+        var Electr1city = document.getElementById("Electr1city").value;
 
-        if (isNaN(Age) || Age < 0){
+        if (isNaN(Electr1city) || Electr1city < 0){
             alert("Input valid number.");
         }
-        else if (Age < 18){
-            alert("You are a youngstah.");
+        else if ((Electr1city >= 0) && (Electr1city<=100)){
+            alert("Discounted electricity rates");
         }
 
-        else if(Age > 18){
+        else if (){
             alert("You are unc.");
         }
 
